@@ -59,7 +59,6 @@ const Close = styled.span`
 const MovieInfoComponent = (props) => {
   const [movieInfo, setMovieInfo] = useState();
   const { selectedMovie } = props;
-
   useEffect(() => {
     Axios.get(
       `https://www.omdbapi.com/?i=${selectedMovie}&apikey=${API_KEY}`,
